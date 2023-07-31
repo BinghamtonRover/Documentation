@@ -15,8 +15,24 @@
 
 * [CAN bus](network-details/can-bus.md)
 * [UDP](network-details/udp.md)
-* [API](network-details/api.md)
+* [Protobuf API](network-details/protobuf-api.md)
 
 ## The Firmware
 
 * [Introduction](the-firmware/introduction.md)
+* [Setting up your IDE](the-firmware/setting-up-your-ide.md)
+* [Firmware Utilities](the-firmware/firmware-utilities.md)
+* [TMC Motor Drivers](the-firmware/tmc-motor-drivers.md)
+
+## Onboard Computers
+
+* [Introduction](onboard-computers/introduction.md)
+* [Setting up the network](onboard-computers/setting-up-the-network.md)
+* [Subsystems Computer](onboard-computers/subsystems-computer.md)
+* [Video](onboard-computers/video.md)
+* [Autonomy](onboard-computers/autonomy.md)
+
+## Dashboard
+
+* [Introduction](dashboard/introduction.md)
+* [MVVM Architecture](dashboard/mvvm-architecture.md)
