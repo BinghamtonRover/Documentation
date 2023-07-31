@@ -15,7 +15,7 @@
 
 * [CAN bus](network-details/can-bus.md)
 * [UDP](network-details/udp.md)
-* [Protobuf API](network-details/protobuf-api.md)
+* [Protobuf API](network-details/api.md)
 
 ## The Firmware
 
