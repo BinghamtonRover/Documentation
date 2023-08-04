@@ -13,7 +13,9 @@
 
 ## Network details
 
-* [CAN bus](network-details/can-bus.md)
+* [CAN bus](network-details/can-bus/README.md)
+  * [Setting up CAN on a Pi](network-details/can-bus/setting-up-can-on-a-pi.md)
+  * [Debugging](network-details/can-bus/debugging.md)
 * [UDP](network-details/udp.md)
 * [Protobuf API](network-details/api.md)
 

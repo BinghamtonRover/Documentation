@@ -16,7 +16,7 @@ Each Teensy device is connected to a central [CAN bus](https://en.wikipedia.org/
 
 Normally, a CAN ID is also used to identify the purpose of the packet, since 8 bytes wouldn't be enough, but we actually don't need to use it for that, since our Protobuf data can always serialize to less than 8 bytes. Instead, we just use IDs to identify the devices themselves, as well as the direction of the data flow (Pi -> Teensy vs Teensy -> Pi)
 
-More information can be found in the [can-bus.md](../network-details/can-bus.md "mention") document.
+More information can be found in the [can-bus](../network-details/can-bus/ "mention") document.
 
 ## Onboard Computers to the Dashboard: UDP
 
