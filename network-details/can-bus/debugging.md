@@ -12,7 +12,7 @@ While CAN works most of the time, there is a lot that can go wrong. Thankfully, 
 
 ## Debugging on the Pi
 
-Linux has a great tool called `can-utils` which offers command-line support for reading and writing to the CAN bus. Simply open two terminals on the Pi and run `candump can0` on one and `cansend can0#deadbeef` on the other. You should see the message (`0xdeadbeef)` appear on the `candump` terminal. In general, when testing other devices, running `candump can` will show all the data that appears on the bus. If no data appears, then the bus is empty or the Pi is not properly connected.
+Linux has a great tool called `can-utils` which offers command-line support for reading and writing to the CAN bus. Simply open two terminals on the Pi and run `candump can0` on one and `cansend can0#deadbeef` on the other. You should see the message (`0xdeadbeef)` appear on the `candump` terminal. In general, when testing other devices, running `candump can0` will show all the data that appears on the bus. If no data appears, then the bus is empty or the Pi is not properly connected.
 
 Verify that the `can` device has indeed been set up by running `ip link show`. If `can0` does not appear, follow the instructions at [setting-up-can-on-a-pi.md](setting-up-can-on-a-pi.md "mention").
 
