@@ -16,6 +16,17 @@ Linux has a great tool called `can-utils` which offers command-line support for 
 
 Verify that the `can` device has indeed been set up by running `ip link show`. If `can0` does not appear, follow the instructions at [setting-up-can-on-a-pi.md](setting-up-can-on-a-pi.md "mention").
 
+## Testing without hardware
+
+Sometimes you may wish to test without access to the CAN bus, for example, if you're working on the Subsystems computer in isolation or on your own (Linux) device. In that case, run the following commands:
+
+<pre class="language-bash"><code class="lang-bash">sudo modprobe vcan
+<strong>sudo ip link add dev vcan0 type vcan
+</strong>sudo ip link set vcan0 up bitrate 500000
+</code></pre>
+
+Now you can run any CAN command and replace `can0` with `vcan0`. This can help isolate issues with the hardware and allow you to test the software in the meantime.
+
 ## Debugging on the Teensy
 
 If the Pi is able to send and receive messages to another device but not to a Teensy, then the issue is probably on the Teensy side. The issue may be:&#x20;
