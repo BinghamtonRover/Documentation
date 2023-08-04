@@ -16,7 +16,8 @@
 * [CAN bus](network-details/can-bus/README.md)
   * [Setting up CAN on a Pi](network-details/can-bus/setting-up-can-on-a-pi.md)
   * [Debugging](network-details/can-bus/debugging.md)
-* [UDP](network-details/udp.md)
+* [UDP](network-details/udp/README.md)
+  * [Setting up the network](network-details/udp/setting-up-the-network.md)
 * [Protobuf API](network-details/api.md)
 
 ## The Firmware
@@ -29,7 +30,6 @@
 ## Onboard Computers
 
 * [Introduction](onboard-computers/introduction.md)
-* [Setting up the network](onboard-computers/setting-up-the-network.md)
 * [Subsystems Computer](onboard-computers/subsystems-computer.md)
 * [Video](onboard-computers/video.md)
 * [Autonomy](onboard-computers/autonomy.md)

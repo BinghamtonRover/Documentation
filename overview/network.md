@@ -24,4 +24,4 @@ We use the [UDP](https://en.wikipedia.org/wiki/User\_Datagram\_Protocol) standar
 
 The onboard computers are connected via Ethernet to each other and to the antenna, which bridges the connection wirelessly to the base station, where the user's PC (running the dashboard) is connected via Ethernet to the base station antenna. In this way, you can think of the antennas as one long Ethernet cable.
 
-More information can be found in the [udp.md](../network-details/udp.md "mention") document.
+More information can be found in the [udp](../network-details/udp/ "mention") document.
