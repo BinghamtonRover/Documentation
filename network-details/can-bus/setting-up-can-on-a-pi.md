@@ -6,7 +6,7 @@ description: The Subsystems Computer's interface to the firmware
 
 Linux has support for the CAN protocol when using an external chip, but it needs to be enabled and configured before it can be used. We use the `` MCP2518FD` `` chip on a custom-built Pi hat to achieve this, and this page describes how to set up the chip on a fresh Raspberry Pi.
 
-## The can0 overlay
+## The CAN0 overlay
 
 First, we need to tell the Pi how to interface with the chip. The Raspberry Pi works with a "device tree" that tells it what hardware to use and how to find it. We will add our own file to this tree and modify the boot config to expose this device to the operating system.
 
