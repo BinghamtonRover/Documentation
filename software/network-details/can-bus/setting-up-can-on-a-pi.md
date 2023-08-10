@@ -35,7 +35,7 @@ dtoverlay=mcp2518fd-can0,oscillator=16000000,interrupt=25,spimaxfrequency=100000
 
 ## The command line
 
-Reboot the Pi. Now that the hardware has been configured, it's time to set up CAN as a network device in the operating system.&#x20;
+Reboot the Pi. Now that the hardware has been configured, it's time to set up CAN as a network device in the operating system.
 
 First, update your software packages:
 
@@ -45,7 +45,7 @@ sudo apt upgrade
 sudo reboot
 ```
 
-Then, use the ip tool to register CAN:&#x20;
+Then, use the ip tool to register CAN:
 
 ```bash
 sudo ip link add can0
@@ -62,6 +62,5 @@ The `can-utils` package offers tools to quickly test the CAN bus. Run `sudo apt 
 
 * [The MCP2518FD chip](https://www.microchip.com/en-us/product/mcp2518fd)
 * [Raspberry's docs on Device Trees](https://www.raspberrypi.com/documentation/computers/configuration.html#changing-the-default-pin-configuration)
-* [Using `dts` and overlays](https://blog.stabel.family/raspberry-pi-4-device-tree/)&#x20;
+* [Using `dts` and overlays](https://blog.stabel.family/raspberry-pi-4-device-tree/)
 * The [`can-utils`](https://github.com/linux-can/can-utils) tool
-
