@@ -1,2 +1,12 @@
 # Welcome!
 
+We are the Binghamton University Rover Team, and we are building a Mars rover to enter into the University Rover Challenge. The rover is a complex project, so these pages document our process, conventions, and guidelines.&#x20;
+
+The pages on this site are split into five main categories:&#x20;
+
+* [Team details](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/lX3w5vgbyxScLPZkgeCk/ "mention") (this page). This section is an introduction to who we are, what we do, and how our team is organized. New members, students looking to join, or anyone interested in our project should start here.
+* [Software](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/Xy9UCQVV6ub6qMjWZys9/ "mention") This section documents the structure of our software, with high-level explanations of how the different systems and devices communicate and interact. All our code is on our GitHub, and each repository there has its own technical documentation. These docs are more high-level and give an overview of the concepts we deal with and how we write code in general rather than how to use the code we wrote.
+* [Electrical](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/bhTceLnBzIhrlO6WDIv5/ "mention") This section documents the different Printed Circuit Boards (PCBs) designed by our Electrical team, as well as their general guidelines and rules for PCB design. Each PCB also comes with detailed specs and technical diagrams.&#x20;
+* [Mechanical](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/afr4EWTwHjeKu1J4SGlu/ "mention") We have several mechanical teams on the rover (Drive, Environmental Analysis, and Human-Robot-Environment Interaction). This section documents shared guidelines and design rules, as well as any documentation for each team.
+
+As mentioned, these pages serve as a good starting point for learning about who we are, how we do what we do, and how to get started as a team member. The specific technical specs or docs for whatever you may be working on will most likely be found somewhere else and will be linked in the relevant sections. This site is also a good place to document concepts, topics, and protocols, that may be too abstract and complex to explain in a technical document.
