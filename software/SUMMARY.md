@@ -1,10 +1,9 @@
 # Table of contents
 
-* [Welcome to the Docs!](README.md)
+* [Software Documentation](README.md)
 
 ## Overview
 
-* [Introduction](overview/introduction.md)
 * [Architecture](overview/architecture.md)
 * [Data format](overview/data-format.md)
 * [Network](overview/network.md)
