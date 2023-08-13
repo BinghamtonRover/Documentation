@@ -2,7 +2,7 @@
 
 We are the Binghamton University Rover Team, and we are building a Mars rover to enter into the University Rover Challenge. The rover is a complex project, so these pages document our process, conventions, and guidelines.&#x20;
 
-The pages on this site are split into five main categories:&#x20;
+The pages on this site are split into five main categories, which you can switch between via the menu in the upper-left (or in the side menu on mobile devices).
 
 * [Team details](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/lX3w5vgbyxScLPZkgeCk/ "mention") (this page). This section is an introduction to who we are, what we do, and how our team is organized. New members, students looking to join, or anyone interested in our project should start here.
 * [Software](http://127.0.0.1:5000/o/cecka0SiHCkEKdZJzt6Q/s/Xy9UCQVV6ub6qMjWZys9/ "mention") This section documents the structure of our software, with high-level explanations of how the different systems and devices communicate and interact. All our code is on our GitHub, and each repository there has its own technical documentation. These docs are more high-level and give an overview of the concepts we deal with and how we write code in general rather than how to use the code we wrote.

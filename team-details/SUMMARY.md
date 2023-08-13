@@ -14,13 +14,3 @@
 * [Extreme Delivery](the-missions/extreme-delivery.md)
 * [Equipment Servicing](the-missions/equipment-servicing.md)
 * [Autonomous Navigation](the-missions/autonomous-navigation.md)
-
-## Github configuration
-
-* [Organization](github-configuration/organization.md)
-
-## Writing code
-
-* [Writing code (Dart)](writing-code/writing-code-dart.md)
-* [Submitting code](writing-code/submitting-code.md)
-* [Reviewing code](writing-code/reviewing-code.md)
