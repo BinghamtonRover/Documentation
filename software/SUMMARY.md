@@ -19,10 +19,14 @@
 
 ## Network details
 
-* [Protobuf API](network-details/api.md)
+* [Protobuf](network-details/protobuf/README.md)
+  * [API Conventions](network-details/protobuf/api-conventions.md)
+  * [Working with Proto files](network-details/protobuf/working-with-proto-files.md)
+  * [Generating code](network-details/protobuf/generating-code.md)
+  * [Debugging Protobuf](network-details/protobuf/debugging-protobuf.md)
 * [CAN bus](network-details/can-bus/README.md)
   * [Setting up CAN on a Pi](network-details/can-bus/setting-up-can-on-a-pi.md)
-  * [Debugging](network-details/can-bus/debugging.md)
+  * [Debugging CAN](network-details/can-bus/debugging.md)
 * [UDP](network-details/udp/README.md)
   * [Setting up the network](network-details/udp/setting-up-the-network.md)
 

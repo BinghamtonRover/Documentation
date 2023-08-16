@@ -14,4 +14,4 @@ Each layer runs in a different environment, with different languages, tools, and
 
 Our Protobuf code is hosted in our [Protobuf](https://github.com/BinghamtonRover/Protobuf) repository, which is to be used as a submodule in any other repository as needed. To simplify the process, we submodule it just once in each language, generate the files as needed, and push them to GitHub as a separate repository that can be imported into other repositories. This means we can delegate all Protobuf-related development to one repository, and only one developer needs to install the Protobuf tools and can push the generated files for everyone else.
 
-More information can be found in the [api.md](../network-details/api.md "mention") document.
+More information can be found in the [protobuf](../network-details/protobuf/ "mention") document.
