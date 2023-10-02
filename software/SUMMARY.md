@@ -40,11 +40,11 @@
 ## Onboard Computers
 
 * [Introduction](onboard-computers/introduction.md)
-* [Configuring systemd](onboard-computers/configuring-systemd.md)
 * [Subsystems Computer](onboard-computers/subsystems-computer.md)
-* [Video](onboard-computers/video/README.md)
+* [Video](onboard-computers/video.md)
   * [UDev Rules](onboard-computers/video/udev-rules.md)
 * [Autonomy](onboard-computers/autonomy.md)
+* [Configuring systemd](onboard-computers/configuring-systemd.md)
 
 ## Dashboard
 
