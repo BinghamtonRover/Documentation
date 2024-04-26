@@ -4,7 +4,9 @@ description: A high-level overview of the different devices across the rover
 
 # Architecture
 
-The rover has three layers of code that each run in different environments. Each layer builds on the previous and is mostly independent of the other code in its own layer.
+The rover has three layers of code that each run in different environments. Each layer builds on the previous and is mostly independent of the other code in its own layer. The following diagram shows an overview, and the following sections explain in more detail.&#x20;
+
+<figure><img src="../.gitbook/assets/Rover Diagram (1).png" alt=""><figcaption><p>All the different devices on the rover and how they communicate</p></figcaption></figure>
 
 ## The Firmware
 
