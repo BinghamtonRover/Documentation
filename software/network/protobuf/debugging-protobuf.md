@@ -19,7 +19,7 @@ These issues may be caused by:&#x20;
 * out-of-sync generated code on each endpoint
 * default values not being sent
 
-Note that the last two don't indicate a problem with the network, but it can still be helpful to capture the buffers on the sender and leave the receiver alone. When dealing with the CAN bus, use `candump` as detailed in [debugging.md](../can-bus/debugging.md "mention"). When using UDP, it is often simpler to just print the buffer right before it is sent or right as it is received rather than using a tool like [WireShark](https://www.wireshark.org/).&#x20;
+Note that the last two don't indicate a problem with the network, but it can still be helpful to capture the buffers on the sender and leave the receiver alone. When dealing with the CAN bus, use `candump` as detailed in [debugging.md](../../legacy-docs/can-bus/debugging.md "mention"). When using UDP, it is often simpler to just print the buffer right before it is sent or right as it is received rather than using a tool like [WireShark](https://www.wireshark.org/).&#x20;
 
 ## Using ProtobufPal
 

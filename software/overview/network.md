@@ -10,18 +10,16 @@ For example, the dashboard may need to drive the rover forward, but it should no
 
 All software running in the same layer (ie, environment) can communicate on the same protocol. Each layer only needs to communicate with the layer immediately before it.&#x20;
 
-## Firmware to Onboard Computers: CAN bus
+## Firmware to Onboard Computers: USB (Serial)
 
-Each Teensy device is connected to a central [CAN bus](https://en.wikipedia.org/wiki/CAN\_bus) that ultimately connects to the Subsystems computer. We use the standard CAN protocol which only supports 8 bytes per packet but we are experimenting with CAN FD support which will let us send up to 64. Each CAN packet has an ID that identifies which device it is sent to.&#x20;
+We use standard serial over USB to communicate with our firmware. We used to use CAN, but switching has made integration with the electrical teams way simpler, and released us from harsh limits on message sizes.&#x20;
 
-Normally, a CAN ID is also used to identify the purpose of the packet, since 8 bytes wouldn't be enough, but we actually don't need to use it for that, since our Protobuf data can always serialize to less than 8 bytes. Instead, we just use IDs to identify the devices themselves, as well as the direction of the data flow (Pi -> Teensy vs Teensy -> Pi)
+All firmware on the rover is connected to the device running the Subsystems Program (called the **Subsystems Computer**). While this doesn't allow for a bus setup like CAN does, it simplifies our network layout by forcing us to consider simple one-to-one connections. We've found this adequately supports our use case without limiting our functionality.&#x20;
 
-More information can be found in the [can-bus](../network-details/can-bus/ "mention") document.
+## Onboard Computers to the Dashboard: UDP (Ethernet/Wi-Fi)
 
-## Onboard Computers to the Dashboard: UDP
-
-We use the [UDP](https://en.wikipedia.org/wiki/User\_Datagram\_Protocol) standard to send packets of data across an Ethernet or wireless connection between the onboard computers and the dashboard. Each device is assigned an IP address, and each individual socket is assigned a port. A program may use multiple sockets. Each packet is then routed to a combination of an IP address and a port.&#x20;
+We use the [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) standard to send packets of data across an Ethernet or wireless connection between the onboard computers and the dashboard. Each device is assigned an IP address, and each individual socket is assigned a port. A program may use multiple sockets. Each packet is then routed to a combination of an IP address and a port.&#x20;
 
 The onboard computers are connected via Ethernet to each other and to the antenna, which bridges the connection wirelessly to the base station, where the user's PC (running the dashboard) is connected via Ethernet to the base station antenna. In this way, you can think of the antennas as one long Ethernet cable.
 
-More information can be found in the [udp](../network-details/udp/ "mention") document.
+More information can be found in the [udp](../network/udp/ "mention") document.

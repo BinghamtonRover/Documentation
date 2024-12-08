@@ -51,7 +51,7 @@ This idea of sending a message and waiting for confirmation (a "handshake") is u
 
 ## Data containing zeroes
 
-**Note**: This behavior has been undone with the new [explicit field presence](https://protobuf.dev/programming-guides/field\_presence/) and should be updated
+**Note**: This behavior has been undone with the new [explicit field presence](https://protobuf.dev/programming-guides/field_presence/) and should be updated
 
 Protobuf is able to serialize large messages into small buffers by omitting all fields that were not set in the original format. When parsing, Protobuf assigns a default value to all unset fields. For example, unset numbers default to zero. This represents a serious problem: how do we tell the rover to stop if we can't send a speed of zero? Or, conversely, if all non-speed messages have speed set to zero implicitly, how does the rover ever drive?
 
@@ -70,7 +70,7 @@ DriveCommand(left: 1.0, right: 1.0, setLeft: true, setRight: true);  // OK
 
 ## Small messages
 
-The firmware is limited by the [can-bus](../can-bus/ "mention") in how many bytes it can receive. Recall that Protobuf omits data that was left in its default value, so only data that was explicitly set is sent over the wire. The exact byte counts for each data type are listed [here](https://protobuf.dev/programming-guides/proto3/#scalar), but as a general rule, each field (with its `set_x` field) should get its own message. For example:&#x20;
+The firmware is limited by the [can-bus](../../legacy-docs/can-bus/ "mention") in how many bytes it can receive. Recall that Protobuf omits data that was left in its default value, so only data that was explicitly set is sent over the wire. The exact byte counts for each data type are listed [here](https://protobuf.dev/programming-guides/proto3/#scalar), but as a general rule, each field (with its `set_x` field) should get its own message. For example:&#x20;
 
 ```dart
 // This command will only send over CAN FD, but not normal CAN
