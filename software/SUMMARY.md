@@ -9,6 +9,14 @@
 * [Network](overview/network.md)
 * [Our GitHub organization](overview/our-github-organization.md)
 
+## Onboarding course
+
+* [Git course](onboarding-course/git-course.md)
+* [Arduino Course](onboarding-course/arduino-course.md)
+* [Flutter course](onboarding-course/flutter-course.md)
+* [Firmware Networking](onboarding-course/firmware-networking.md)
+* [Software Networking](onboarding-course/software-networking.md)
+
 ## Writing Code
 
 * [Code conventions (Dart)](writing-code/code-conventions-dart.md)
