@@ -57,7 +57,7 @@ class User {
 }
 ```
 
-A `message` is a new type of data, like a `class` or a `struct`. A message contains fields, and each field has a type, name, and _unique_ ID. IDs do not have to be in order, and are only used by the Protobuf compiler, not us. See [here](https://protobuf.dev/programming-guides/proto3/#scalar) for a list of all the built-in types, but you can also use a type you defined. You can denote a list with `repeated`, and a list of bytes (`char*)` with `bytes`.  The [working-with-proto-files.md](working-with-proto-files.md "mention") page describes more detail about the syntax and code generation.
+A `message` is a new type of data, like a `class` or a `struct`. A message contains fields, and each field has a type, name, and _unique_ ID. IDs do not have to be in order, and are only used by the Protobuf compiler, not us. See [here](https://protobuf.dev/programming-guides/proto3/#scalar) for a list of all the built-in types, but you can also use a type you defined. You can denote a list with `repeated`, and a list of bytes `(char*)` with `bytes`.  The [working-with-proto-files.md](working-with-proto-files.md "mention") page describes more detail about the syntax and code generation.
 
 ## More Resources
 
