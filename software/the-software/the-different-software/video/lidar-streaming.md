@@ -5,7 +5,7 @@ description: Intregating SICK's TiM551-2050001 LiDAR Sensor
 # Lidar Streaming
 
 ## Introduction
-We integrated a [SICK TiM551-2050001 LiDAR](https://www.sick.com/us/en/catalog/products/lidar-and-radar-sensors/lidar-sensors/tim/tim551-2050001/p/p343045?tab=detail) to help with obstacle detection during the autonomous mission (TODO: LINK TO AUTONOMOUS MISSION OVERVIEW).
+We integrated a [SICK TiM551-2050001 LiDAR](https://www.sick.com/us/en/catalog/products/lidar-and-radar-sensors/lidar-sensors/tim/tim551-2050001/p/p343045?tab=detail) to help with obstacle detection during the [autonomous mission](../../../../team-details/the-missions/autonomous-navigation.md "mention").
 The LiDAR we are using provides a 270 field of view with a range of 0.05 to 10 meters.
 The LiDAR program receives messages from the LiDAR and converts it to a JPG image which gets sent to the Dashboard, and an array of bytes that is sent to the autonomy program to be processed. 
 
