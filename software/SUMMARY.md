@@ -38,6 +38,9 @@
   * [Debugging Protobuf](network/protobuf/debugging-protobuf.md)
 * [UDP](network/udp/README.md)
   * [Setting up the network](network/udp/setting-up-the-network.md)
+  * [Troubleshooting](network/udp/troubleshooting.md)
+* [Serial](network/serial/README.md)
+  * [Troubleshooting](network/serial/troubleshooting.md)
 
 ## The Firmware
 
