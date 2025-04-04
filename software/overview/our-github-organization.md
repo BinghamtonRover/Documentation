@@ -9,4 +9,4 @@ The repositories are all public and read-only. All repositories protect the `mai
 * Make your changes on the new branch. Commit and push
 * Open a new pull request, which must pass automatic and manual reviews
 
-For more details, see the [git-course.md](../onboarding-course/git-course.md "mention") and [using-git](../writing-code/using-git/ "mention") pages.
+For more details, see the [git-course](../onboarding-course/git-course/ "mention") and [advanced-git-github](../writing-code/advanced-git-github/ "mention") pages.

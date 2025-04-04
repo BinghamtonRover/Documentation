@@ -11,7 +11,14 @@
 
 ## Onboarding course
 
-* [Git course](onboarding-course/git-course.md)
+* [Git course](onboarding-course/git-course/README.md)
+  * [What is Git?](onboarding-course/git-course/what-is-git.md)
+  * [What is GitHub?](onboarding-course/git-course/what-is-github.md)
+  * [Merge Conflicts](onboarding-course/git-course/merge-conflicts.md)
+  * [Making your first commit](onboarding-course/git-course/making-your-first-commit.md)
+  * [Adding more commits](onboarding-course/git-course/adding-more-commits.md)
+  * [Working with branches](onboarding-course/git-course/working-with-branches.md)
+  * [Using GitHub](onboarding-course/git-course/using-github.md)
 * [Arduino Course](onboarding-course/arduino-course.md)
 * [Flutter course](onboarding-course/flutter-course.md)
 * [Firmware Networking](onboarding-course/firmware-networking.md)
@@ -22,11 +29,13 @@
 * [Code conventions (Dart)](writing-code/code-conventions-dart.md)
 * [Code conventions (C++)](writing-code/code-conventions-c++.md)
 * [Documenting code](writing-code/documenting-code.md)
-* [Using Git](writing-code/using-git/README.md)
-  * [Basic workflow](writing-code/using-git/basic-workflow.md)
-  * [Pull Requests](writing-code/using-git/pull-requests.md)
-  * [Git Submodules](writing-code/using-git/git-submodules.md)
-  * [Common problems](writing-code/using-git/common-problems.md)
+* [Advanced Git/GitHub](writing-code/advanced-git-github/README.md)
+  * [CI/CD](writing-code/advanced-git-github/ci-cd.md)
+  * [Git Submodules](writing-code/advanced-git-github/git-submodules.md)
+  * [Avoiding merge conflicts](writing-code/advanced-git-github/avoiding-merge-conflicts.md)
+  * [Common problems](writing-code/advanced-git-github/common-problems.md)
+  * [Restoring your changes](writing-code/advanced-git-github/restoring-your-changes.md)
+  * [Squashing](writing-code/advanced-git-github/squashing.md)
 * [Reviewing Code (admins)](writing-code/reviewing-code-admins.md)
 
 ## Network
