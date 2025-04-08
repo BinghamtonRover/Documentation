@@ -45,23 +45,21 @@ This means that you have a local branch called \`my-feature\`, but Git doesn't k
 $ git push --set-upstream origin my-feature
 # Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 # remote:
-# remote: Create a pull request for 'temp' on GitHub by visiting:
-# remote:      https://github.com/bucs445spring2025/portfolio-team4/pull/new/temp
+# remote: Create a pull request for 'my-feature' on GitHub by visiting:
+# remote:      https://github.com/BinghamtonRover/Your-Repo/pull/new/my-feature
 # remote:
-# To https://github.com/bucs445spring2025/portfolio-team4.git
-#  * [new branch]      temp -> temp
-# branch 'temp' set up to track 'origin/temp'
+# To https://github.com/BinghamtonRover/Your-Repo.git
+#  * [new branch]      my-feature -> my-feature
+# branch 'my-feature' set up to track 'origin/my-feature'
 ```
 
 {% hint style="success" %}
-You can use a shorthand here: `git push -u origin my-feature` . You can also tell Git to do this every time&#x20;
+You can use a shorthand here: `git push -u origin my-feature` . As the above error suggested, you can make sure Git does this automatically by running `git config --global push.autoSetupRemote true` .&#x20;
 {% endhint %}
 
-The output here shows you which URL it pushed the new branch to, and `temp -> temp`means that it pushed a local branch called `temp`to a remote branch called `temp` . It also says `[new branch]`, and that your branch was set up to "track" `origin/temp`. This means that in the future, Git will remember which remote branch you used and you can simply use`git push` next time.
+The output here shows you which URL it pushed the new branch to, and `my-feature -> my-feature` means that it pushed a local branch called `my-feature`to a remote branch called `my-feature`. It also says `[new branch]`, and that your branch was set up to "track" `origin/my-feature`.&#x20;
 
-{% hint style="success" %}
-As the error mention suggests, running `git config --global push.autoSetupRemote true`will tell Git to always use `--set-upstream`if it's missing, so you can just use `git push`by itself.
-{% endhint %}
+Pushing a branch pushes any commits that are not already on the remote, but only when you run the command. If you commit more changes after pushing — push again.
 
 ### Pulling
 
