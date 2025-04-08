@@ -1,3 +1,7 @@
+---
+icon: git
+---
+
 # What is Git?
 
 ## Version control

@@ -1,3 +1,7 @@
+---
+icon: code-commit
+---
+
 # Making your first commit
 
 With the explanation and background context covered in the previous pages, these next few sections will walk you through working with a Git repository.&#x20;

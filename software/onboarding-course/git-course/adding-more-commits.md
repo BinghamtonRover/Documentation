@@ -1,3 +1,7 @@
+---
+icon: code-fork
+---
+
 # Adding more commits
 
 ### Simple changes

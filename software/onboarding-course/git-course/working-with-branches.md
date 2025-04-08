@@ -1,3 +1,7 @@
+---
+icon: code-branch
+---
+
 # Working with branches
 
 Now that we know how to create commits and manage files, let's practice doing that on other branches, and merging back to `main` later. First, notice how `git status` has already been telling you at every step what branch you're on. We can also use `git branch`to list all the available branches and which one we're on.&#x20;

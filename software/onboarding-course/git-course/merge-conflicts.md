@@ -1,3 +1,7 @@
+---
+icon: message-exclamation
+---
+
 # Merge Conflicts
 
 One side effect of trunk-based development, and really Git in general, is that over time we end up with many small branches for unrelated features. Usually, this is a good thing: if `featureA` touches file `a`.py, and `featureB` creates `b.py`, then both can be merged into `main` by applying their commits in any order. That's a very ideal case, and in fact we try to structure our code to allow this to happen as often as possible. But what if things get more complex?

@@ -1,3 +1,7 @@
+---
+icon: github
+---
+
 # What is GitHub?
 
 Git is great when working on software by yourself. You get version control, feature branches, and a timeline full of commits that describe how your project evolved. But very quickly you'll find yourself working on software with others. We need a way to share repositories between developers, and that's exactly what **GitHub** is all about. GitHub allows you to control who can see your code, who can change your code, how pull requests are handled, and a lot more. In fact, pull requests are entirely a GitHub feature – Git just handles the merging. GitHub has many more community-centered features, but for this guide we will focus on how you can incorporate GitHub into your workflow.
