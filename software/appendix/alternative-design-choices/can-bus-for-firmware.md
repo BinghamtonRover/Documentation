@@ -1,2 +1,0 @@
-# CAN Bus for firmware
-
