@@ -75,6 +75,50 @@ messages:
             max: 1.0
 ```
 
-// TODO: Describe automatic calculation of precision/scale, min/max, and offset.
-// Mention which properties are mandatory (length, signedness, etc) and what can be
-// omitted in which situations
+### YAML Specification
+
+Our custom YAML format is designed to be human-readable and easy to work with. A Python script parses this file to generate the final `.dbc` file.
+
+#### Top-Level Fields
+
+- `type_aliases` (optional): A list of reusable signal definitions to avoid repetition.
+- `messages` (required): A list of all the CAN messages.
+
+#### Message Definition
+
+Each message in the `messages` list has a name and the following fields:
+
+- `id` (required): The CAN message ID. Can be in decimal or hex, but in most cases should be in hex.
+- `signals` (required): A list of signals contained within the message.
+- `size` (optional): The size of the message in bytes. If omitted or set to `"auto"`, the size is automatically calculated by summing the bit lengths of all its signals and rounding up to the nearest byte.
+- `comment` (optional, but recommended): A description for the message.
+- `is_fd` (optional): Set to `true` if this is a CAN-FD message, allowing a payload of up to 64 bytes. Defaults to `false`.
+
+#### Signal Definition
+
+Each signal in the `signals` list has a name and the following fields:
+
+- `length` (required): The length of the signal in bits.
+- `is_signed` (required): `true` if the signal is a signed integer, `false` otherwise.
+- `type_alias` (optional): The name of an alias from `type_aliases`. The signal will inherit the properties of the alias, but any properties explicitly defined in the signal will override the alias's properties.
+- `comment` (optional): A description for the signal.
+- `unit` (optional): The physical unit of the signal's value (e.g., "V", "RPM", "°C").
+
+### Automatic Calculation
+
+To simplify defining signals, the generator script can automatically calculate the `scale`, `offset`, `min`, and `max` properties based on the information you provide.
+
+You must provide one of the following combinations for the script to work:
+
+1. `min` and `max`:
+    - The script will calculate the `scale` and `offset` for you. This is the most common and recommended method.
+    - `scale = (max - min) / (2^length - 2)`
+    - `offset` is derived from the `min` and `scale`.
+
+2. `scale` and `offset`:
+    - The script will calculate the `min` and `max` values the signal can represent.
+
+3. `scale`, `offset`, `min`, and `max`:
+    - If you provide all four, no calculations are performed. This is useful if you need to override the script's calculations for a specific reason.
+
+If you do not provide enough information (e.g., only `min`), the script will terminate with an error.
